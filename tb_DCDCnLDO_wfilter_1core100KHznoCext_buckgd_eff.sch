@@ -1,4 +1,4 @@
-v {xschem version=3.4.2 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -261,13 +261,13 @@ C {devices/code_shown.sym} -850 -80 0 0 {name=s1 only_toplevel=false value="
 *save all
 *tran 10n 3000u
 *tran 5n 0.6m
-tran 10n 3m
+tran 10n 1m
 *write DCDC_v1p4_5MHz_NMOS_PMOS.raw
 *wrdata ~/Documents/Postdoc/chipathon2022/3LFCC_AC3E/xschem/dev_switches/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout) tran.i(vmeas) tran.v(vdd) tran.i(v3) tran.v(vh) tran.i(v5)
 *wrdata /foss/designs/personal/3LFCC_AC3E/xschem/hierarchy_sch/DCDC_5V_FINAL/3LFCC_v1p4.txt tran.v(vout_core) tran.i(v1)
 *wrdata /foss/designs/personal/3LFCC_AC3E/xschem/testbench/TopModule/3LFCC_v1p5_topmodule_wfilter_jmtest.txt tran.v(vout_core) tran.i(v3) tran.i(v4) tran.i(v9)
 *wrdata /foss/designs/personal/3LFCC_v1p5_topmodule_wfilter_onecore10MHz_3lfcc23.txt tran.v(vout_core) tran.i(v3) tran.i(v4) tran.i(v9)
-wrdata /foss/designs/Open3LFCC_V2/data/DCDCnLDO_wfilter_1core100KHznoCext_buck_eff.txt tran.v(vh) tran.i(vh) tran.v(ldo_out) tran.i(vldo_out)
+wrdata /foss/designs/Open3LFCC_V2_TO_JUNE2024/data/DCDCnLDO_wfilter_1core100KHznoCext_buck_eff.txt tran.v(vh) tran.i(vh) tran.v(ldo_out) tran.i(vldo_out)
 
 
 *Relación D1 D2 para combinar estados
@@ -467,7 +467,6 @@ C {devices/lab_pin.sym} 1070 -1460 2 0 {name=p2 sig_type=std_logic lab=pos
 
 }
 C {devices/gnd.sym} -30 -1320 0 0 {name=l50 lab=GND}
-C {/foss/designs/PMIC_lab-on-chip_power-management/DCDC_LDO_sim/bgr2.sym} -1390 200 0 0 {name=xb1}
 C {devices/res.sym} 2050 -1260 0 0 {name=RL
 value=\{RL\}
 footprint=1206
@@ -583,3 +582,4 @@ C {devices/lab_pin.sym} 460 -740 0 0 {name=l21 sig_type=std_logic lab=D1
 C {devices/lab_pin.sym} 450 -630 0 0 {name=l22 sig_type=std_logic lab=D1_N
 }
 C {devices/vsource.sym} 910 -650 0 0 {name=V_res value=0}
+C {/foss/designs/Open3LFCC_V2_TO_JUNE2024/bgr2.sym} -1390 200 0 0 {name=xb2}

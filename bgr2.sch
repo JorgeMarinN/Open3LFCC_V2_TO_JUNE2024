@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -27,7 +28,6 @@ N 640 -1370 640 -1310 { lab=avdd}
 N 530 -1280 640 -1280 { lab=avdd}
 N 530 -1370 530 -1280 { lab=avdd}
 N 530 -1370 640 -1370 { lab=avdd}
-N 640 -1370 730 -1370 { lab=avdd}
 N 570 -1140 640 -1140 { lab=bg_out}
 N 1430 -1240 1460 -1240 { lab=inp}
 N 1650 -1240 1690 -1240 { lab=inn}
@@ -66,7 +66,6 @@ N 960 -1080 1050 -1080 { lab=#net1}
 N 1050 -1080 1160 -1080 { lab=#net1}
 N 1160 -1080 1250 -1080 { lab=#net1}
 N 1240 -1080 1330 -1080 { lab=#net1}
-N 680 -1370 1390 -1370 { lab=avdd}
 N 1390 -1370 1390 -1280 { lab=avdd}
 N 690 -990 690 -960 { lab=agnd}
 N 690 -960 750 -960 { lab=agnd}
@@ -215,6 +214,8 @@ N 2730 -1270 2770 -1270 { lab=mir}
 N 2360 -1370 2810 -1370 { lab=avdd}
 N 2810 -1370 2810 -1320 { lab=avdd}
 N 2810 -1240 2810 -1180 { lab=iref}
+N 640 -1370 1390 -1370 {
+lab=avdd}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1630 -1280 0 0 {name=M1
 L=2
 W=3
